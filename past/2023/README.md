@@ -2,7 +2,7 @@
 
 ## 2023 - List of Past DeFi Incidents
 
-186 incidents included.
+188 incidents included.
 
 [20231230 ChannelsFinance](#20231230-channelsfinance---compoundv2-inflation-attack)
 
@@ -37,6 +37,8 @@
 [20231129 Burntbubba](#20231129-burntbubba---price-manipulation)
 
 [20231129 AIS](#20231129-ais---access-control)
+
+[20231128 FiberRouter](#20231128-FiberRouter---input-validation)
 
 [20231125 MetaLend](#20231125-metalend---compoundv2-inflation-attack)
 
@@ -95,6 +97,8 @@
 [20231012 Platypus](#20231012-platypus---business-logic-flaw)
 
 [20231011 BH](#20231011-bh---price-manipulation)
+
+[20231008 ZS](#20231008-zs---business-logic-flaw)
 
 [20231008 pSeudoEth](#20231008-pseudoeth---pool-manipulation)
 
@@ -716,6 +720,26 @@ https://twitter.com/Phalcon_xyz/status/1729861048004391306
 
 ---
 
+### 20231128 FiberRouter - input validation
+
+### Lost: 18 eth
+
+Testing
+
+```sh
+forge test --contracts ./src/test/2023-11/FiberRouter_exp.sol -vvv
+```
+
+#### Contract
+
+[FiberRouter_exp.sol](../../src/test/2023-11/FiberRouter_exp.sol)
+
+#### Link reference
+
+https://x.com/MetaSec_xyz/status/1729323254610002277
+
+---
+
 ### 20231125 MetaLend - CompoundV2 Inflation Attack
 
 ### Lost: ~$4K
@@ -1313,6 +1337,26 @@ forge test --contracts ./src/test/2023-10/BH_exp.sol -vvv
 https://twitter.com/BeosinAlert/status/1712139760813375973
 
 https://twitter.com/DecurityHQ/status/1712118881425203350
+
+---
+
+### 20231008 ZS - Business Logic Flaw
+
+### Lost: ~$14K
+
+Test
+
+```
+forge test --contracts ./src/test/2023-10/ZS_exp.sol -vvv
+```
+
+#### Contract
+
+[ZS_exp.sol](../../src/test/2023-10/ZS_exp.sol)
+
+#### Link Reference
+
+https://x.com/MetaSec_xyz/status/1711189697534513327
 
 ---
 
